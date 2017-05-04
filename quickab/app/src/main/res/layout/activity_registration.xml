@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/grey"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.zumo.qq.registration">
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/register"
+      android:text="Register AS:"
+      android:textSize="40sp"
+
+      android:textStyle="bold|italic"
+      android:layout_centerHorizontal="true"
+      android:textColor="@color/black"
+       />
+
+  <Button
+        android:text="RIDER"
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:id="@+id/ride"
+        android:textSize="30dp"
+        android:onClick="Ride"
+        android:background="@color/bg"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="107dp"
+      android:layout_below="@+id/register"
+      android:layout_alignParentStart="true" />
+
+  <Button
+      android:text="DRIVER"
+      android:layout_width="500dp"
+      android:layout_height="50dp"
+      android:id="@+id/drive"
+      android:textSize="30dp"
+      android:onClick="Drive"
+      android:background="@color/bg"
+      android:textColor="@color/yellow"
+      android:layout_marginTop="56dp"
+      android:layout_below="@+id/ride"
+      android:layout_alignParentStart="true" />
+
+</RelativeLayout>
